@@ -18,7 +18,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ blogs, homeNetworkingData, tokenInfo }) {
-  console.log(blogs);
   return (
     <section className="home">
       <Hero />

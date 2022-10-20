@@ -1,7 +1,24 @@
+import { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "./utils/Button";
 
 function Hero() {
+  const outer = useRef(null);
+  const inner = useRef(null);
+
+  useEffect(() => {
+    function rotateImg() {
+      if (window.scrollY < 1000) {
+        outer.current.style.rotate = `${window.scrollY / 5}deg`;
+        inner.current.style.rotate = `${window.scrollY / 10}deg`;
+      }
+    }
+    window.addEventListener("scroll", rotateImg);
+
+    return () => {
+      window.removeEventListener("scroll", rotateImg);
+    };
+  }, []);
   return (
     <div className="hero mt-5 pb-5">
       <Container>
@@ -23,8 +40,8 @@ function Hero() {
           </Col>
           <Col lg={6} className="mb-3">
             <div className="scroll-animation">
-              <div className="outer">
-                <div className="inner"></div>
+              <div ref={outer} className="outer">
+                <div ref={inner} className="inner"></div>
               </div>
             </div>
           </Col>
