@@ -7,7 +7,33 @@
 
 
 // *************************** components ***************************
-
+.header{
+  .top{
+    &:hover{
+      opacity: 1 !important;
+    }
+    p, h6{
+      margin-bottom: 0;
+    }
+    .btn{
+      border-radius: 50px;
+      border: 1px solid black;
+    }
+    .icon{
+      border: 1px solid black;
+      padding: 2px 4px;
+      border-radius: 50%;
+    }
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    color: black;
+    margin: auto 0.8rem;
+  }
+}
 
 
 // *************************** overrides ***************************
