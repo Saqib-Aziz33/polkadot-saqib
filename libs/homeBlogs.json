@@ -1,0 +1,20 @@
+[
+  {
+    "title": "First Parachain Successfully Migrates from Kusama to Polkadot",
+    "text": "KILT Protocol's migration from Kusama to Polkadot is an important technical milestone and the first parachain migration. Polkadot's 'canary network' model allows Web3 projects to test their technology in a real-world environment before upgrading to stable production networks....",
+    "img": "/assets/image1.png",
+    "by": "Parachain"
+  },
+  {
+    "title": "Polkadot Roadmap Roundup",
+    "text": "A proposed roadmap for upcoming developments on Polkadot. Get the latest status on asynchronous backing, parathreads, XCMv3, governance, common-good parachains and more....",
+    "img": "/assets/image2.jpg",
+    "by": "Polkadot"
+  },
+  {
+    "title": "Sub0, the Polkadot Developer Conference, comes to Lisbon in November",
+    "text": "The two-day live sub0 conference will run on November 28th-29th. Featuring keynote presentations, breakout sessions, workshops & side events. Sign up for ticket updates....",
+    "img": "/assets/image3.png",
+    "by": "Polkadot"
+  }
+]

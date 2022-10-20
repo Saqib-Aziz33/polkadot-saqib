@@ -4,16 +4,37 @@ import HomeNetwork from "../components/HomeNetwork";
 import BannerBox from "../components/utils/BannerBox";
 import Button from "../components/utils/Button";
 import Powering from "../components/Powering";
+import Blogs from "../components/Blogs";
+import Link from "next/link";
+// data
+import blogs from "../libs/homeBlogs.json";
+import homeNetworkingData from "../libs/homeNetworking.json";
+import tokenInfo from "../libs/tokenInfo.json";
 
-export default function Home() {
+export async function getStaticProps() {
+  return {
+    props: { blogs, homeNetworkingData, tokenInfo },
+  };
+}
+
+export default function Home({ blogs, homeNetworkingData, tokenInfo }) {
+  console.log(blogs);
   return (
     <section className="home">
       <Hero />
-      <HomeNetwork />
+      <HomeNetwork homeNetworkingData={homeNetworkingData} />
       <BannerBox heading="Learn more about Polkadot's technology">
         <Button>Discover Polkadot</Button>
       </BannerBox>
-      <Powering />
+      <Powering tokenInfo={tokenInfo} />
+      <BannerBox heading="From The Blogs" />
+      <Blogs blogs={blogs} />
+      <BannerBox heading="Want to get involved?">
+        <Button>Join the community</Button>
+        <p className="mt-4">
+          or learn about how to <Link href="/">build on Polkadot.</Link>
+        </p>
+      </BannerBox>
     </section>
   );
 }

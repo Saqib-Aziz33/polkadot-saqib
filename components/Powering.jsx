@@ -2,25 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import BannerBox from "./utils/BannerBox";
 import Button from "./utils/Button";
 
-const tokenInfo = [
-  {
-    title: "Governance",
-    text: "Polkadot token holders have complete control over the protocol. All privileges, which on other platforms are exclusive to miners, will be given to the Relay Chain participants (DOT holders), including managing exceptional events such as protocol upgrades and fixes.",
-    img: "/assets/home-icon-token-1.svg",
-  },
-  {
-    title: "Staking",
-    text: "Game theory incentivizes token holders to behave in honest ways. Good actors are rewarded by this mechanism whilst bad actors will lose their stake in the network. This ensures the network stays secure.",
-    img: "/assets/home-icon-token-2.svg",
-  },
-  {
-    title: "Bonding",
-    text: "New parachains are added by bonding tokens. Outdated or non-useful parachains are removed by removing bonded tokens. This is a form of proof of stake.",
-    img: "/assets/home-icon-token-3.svg",
-  },
-];
-
-function Powering() {
+function Powering({ tokenInfo }) {
   return (
     <div className="powering text-white bg-dark pt-5">
       <Container className="text-center">
@@ -32,7 +14,7 @@ function Powering() {
 
         <Row className="mt-5">
           {tokenInfo.map((item) => (
-            <Col key={item.title} className="mb-3" lg={4}>
+            <Col md={4} key={item.title} className="mb-3">
               <img src={item.img} width={200} alt="" />
               <h4 className="mt-3">{item.title}</h4>
               <p className="text-white">{item.text}</p>
