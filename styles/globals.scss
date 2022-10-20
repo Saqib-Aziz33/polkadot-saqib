@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$clr-primary: #e6007aFF;
+
 * {
   font-family: 'Roboto', sans-serif;
+}
+body{
+  line-height: 1.6;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+a{
+  color: black;
+  display: inline-block;
+  padding: 1px 0;
+  text-decoration: none;
+  border-bottom: 1px solid $clr-primary;
+  &:hover{
+    color: $clr-primary;
+  }
+}
+p{
+  color: #172026FF;
 }
 
 
 
 // *************************** components ***************************
 .header{
+  a{
+    border-bottom: 0;
+  }
   .top{
     &:hover{
       opacity: 1 !important;
@@ -34,10 +58,62 @@
     margin: auto 0.8rem;
   }
 }
-
+.hero{
+  .scroll-animation{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    .outer{
+      height: 100%;
+      width: 100%;
+      background-image: url('../media/xcm-animation-outer.svg');
+      background-size: cover;
+      .inner{
+        height: 100%;
+        width: 100%;
+        background-image: url('../media/xcm-animation-inner.png');
+        background-size: cover;
+      }
+    }
+  }
+}
+.home-network{
+  p{
+    text-align: justify;
+  }
+}
 
 // *************************** overrides ***************************
 
 
 
 // *************************** utils ***************************
+.my-btn{
+  border: 1px solid $clr-primary;
+  color: $clr-primary;
+  background-color: transparent;
+  padding: 1.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  &:hover{
+    color: white;
+    .btn-bg-grad{
+      width: 100%;
+    }
+  }
+  .btn-bg-grad{
+    border-radius: inherit;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    background-color: $clr-primary;
+    width: 0;
+    height: 100%;
+    top: 0;left: 0;
+    z-index: -1;
+  }
+}

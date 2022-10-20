@@ -50,7 +50,7 @@ function Header() {
             style={{ border: "none" }}
             aria-controls="basic-navbar-nav"
           >
-            <FaBars />
+            <FaBars size={25} />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
