@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import HomeNetwork from "../components/HomeNetwork";
 import BannerBox from "../components/utils/BannerBox";
 import Button from "../components/utils/Button";
+import Powering from "../components/Powering";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <BannerBox heading="Learn more about Polkadot's technology">
         <Button>Discover Polkadot</Button>
       </BannerBox>
+      <Powering />
     </section>
   );
 }

@@ -57,7 +57,7 @@ function HomeNetwork() {
       <Container>
         <Row>
           {componentData.map((item) => (
-            <Col key={item.title} md={4} className="mb-4 px-4">
+            <Col key={item.title} md={6} lg={4} className="mb-4 px-4">
               <img src={item.img} width={50} alt="" />
               <h4 className="my-3 fw-bold">{item.title}</h4>
               <p dangerouslySetInnerHTML={item.text}></p>
