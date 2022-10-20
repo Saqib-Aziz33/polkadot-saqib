@@ -27,7 +27,7 @@ function Hero() {
             <h1 className="display-2 fw-bold">
               The multichain vision for Web3 starts here.
             </h1>
-            <p className="lead my-4">
+            <p className="my-4" style={{ fontSize: "1.1rem" }}>
               Polkadot unites and secures a growing ecosystem of specialized
               blockchains called parachains. Apps and services on Polkadot can
               securely communicate across chains, forming the basis for a truly
