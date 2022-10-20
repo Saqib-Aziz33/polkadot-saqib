@@ -79,6 +79,12 @@ h1,h2,h3,h4,h5,h6{
       }
     }
   }
+  @media only screen and (max-width: 500px){
+    .scroll-animation{
+      height: 280px;
+      width: 280px;
+    }
+  }
 }
 .home-network{
   p{
@@ -90,7 +96,29 @@ h1,h2,h3,h4,h5,h6{
     background:linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.322)) ,url('../media/web3-summit-3.jpg') no-repeat center;
   }
 }
-
+.footer{
+  ul{
+    list-style: none;
+    padding-left: 0;
+    a{
+      color: white;
+      opacity: 0.5;
+      padding: 0;
+      border-bottom: 0;
+      margin-bottom: 5px;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  .icons{
+    .icon{
+      padding: 8px 12px;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+  }
+}
 
 // *************************** overrides ***************************
 .bg-primary{
