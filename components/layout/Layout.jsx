@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import TopScrollBar from "../utils/TopScrollBar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -25,6 +26,7 @@ function Layout({ children }) {
           rel="stylesheet"
         />
       </Head>
+      <TopScrollBar />
       <Header />
       <main>{children}</main>
       <Footer />
