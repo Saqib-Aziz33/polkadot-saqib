@@ -61,6 +61,31 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1.2rem;
     color: black;
     margin: auto 0.8rem;
+    position: relative;
+    span{
+      color: $clr-primary;
+      font-size: 2rem;
+      position: absolute;
+      right: 100%;
+      top: -30px;
+      opacity: 0;
+    }
+    &:hover{
+      span{
+        animation: nav-link-ani 0.8s ease alternate;
+      }
+    }
+  }
+
+
+  @keyframes nav-link-ani{
+    from{
+      opacity: 0;
+    }
+    to{
+      right: 0;
+      opacity: 1;
+    }
   }
 }
 .hero{

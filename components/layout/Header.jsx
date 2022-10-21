@@ -56,7 +56,10 @@ function Header() {
             <Nav className="ms-auto">
               {navLinks.map((link) => (
                 <Link key={link.title} href={link.url}>
-                  <a className="nav-link">{link.title}</a>
+                  <a className="nav-link">
+                    <span>.</span>
+                    {link.title}
+                  </a>
                 </Link>
               ))}
             </Nav>
