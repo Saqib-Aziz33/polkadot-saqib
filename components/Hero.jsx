@@ -33,7 +33,7 @@ function Hero() {
               securely communicate across chains, forming the basis for a truly
               interoperable decentralized web.
             </p>
-            <div className="d-flex gap-4">
+            <div className="d-flex flex-wrap gap-4">
               <Button>Learn Parachains</Button>
               <Button>Learn Cross-Chain</Button>
             </div>
