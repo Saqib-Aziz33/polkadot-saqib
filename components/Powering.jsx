@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-import BannerBox from "./utils/BannerBox";
 import Button from "./utils/Button";
 
 function Powering({ tokenInfo }) {
@@ -59,7 +58,7 @@ function Powering({ tokenInfo }) {
         </Container>
       </section>
 
-      <section className="founded py-5 ps-5">
+      <section className="founded px-2 py-5 ps-sm-5">
         <h1 className="display-1 fw-bold mb-3" style={{ maxWidth: "1000px" }}>
           Founded by some of the blockchain industry’s foremost builders
         </h1>
