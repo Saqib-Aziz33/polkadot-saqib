@@ -7,7 +7,7 @@ function Blogs({ blogs }) {
       <Container>
         <Row className="align-items-stretch">
           {blogs.map((blog, i) => (
-            <Col md={6} lg={4} key={i} className="mb-3">
+            <Col md={6} lg={4} key={i} className="mb-4">
               <Blog blog={blog}></Blog>
             </Col>
           ))}

@@ -42,7 +42,13 @@ function Header() {
         <Container>
           <Link href="/">
             <Navbar.Brand>
-              <Image src="/assets/logo.svg" height={90} width={170} alt="" />
+              <Image
+                src="/assets/logo.svg"
+                style={{ cursor: "pointer" }}
+                height={90}
+                width={170}
+                alt=""
+              />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle
