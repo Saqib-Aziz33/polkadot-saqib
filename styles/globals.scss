@@ -2,6 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
 $clr-primary: #e6007aFF;
+$clr-dark: #172026FF;
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -126,6 +127,32 @@ h1,h2,h3,h4,h5,h6{
   overflow: hidden;
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
+.any-type-data{
+  .col-bg{
+    overflow: hidden;
+    min-height: 400px;
+    background-image: url('../media/dg-network-xl-2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .cards{
+    position: relative;
+    top: -80px;
+    .wrapper{
+      background-color: white;
+      color: $clr-dark;
+      border-radius: 12px;
+      padding: 0.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
 
 // *************************** overrides ***************************
 .bg-primary{
@@ -134,7 +161,9 @@ h1,h2,h3,h4,h5,h6{
 .text-primary{
   color: $clr-primary !important;
 }
-
+.bg-dark{
+  background-color: $clr-dark !important;
+}
 
 // *************************** utils ***************************
 .my-btn{
