@@ -7,7 +7,7 @@ import Button from "../utils/Button";
 
 function Footer() {
   return (
-    <footer className="footer bg-dark pt-5 px-2 text-white">
+    <footer className="footer bg-dark pb-2 pt-5 px-2 text-white">
       <Container>
         <Row>
           <Col xs={6} md={4} lg={3}>
@@ -125,7 +125,7 @@ function Footer() {
             <Button className="fw-bold text-white py-1">Subscribe</Button>
           </Col>
         </Row>
-        <div className="d-flex align-items-center gap-4">
+        <div className="d-flex mt-4 align-items-center gap-4">
           <Image src="/assets/footer-logo.svg" height={75} width={150} alt="" />
           <p className="text-white mb-0 mt-2 opacity-50">
             © 2022 Web3 Foundation | Impressum | Disclaimer | Privacy

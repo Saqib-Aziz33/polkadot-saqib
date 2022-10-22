@@ -187,10 +187,24 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
-.founded-by{
-  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../media/polkadot-founders.jpg') top no-repeat;
-  background-size: cover;
-  padding-top: 150px;padding-bottom: 150px;
+.mission{
+  .founded-by {
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../media/polkadot-founders.jpg') top no-repeat;
+      background-size: cover;
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+    .founder-cards{
+      position: relative;
+      top: -50px;
+      .col-card{
+        background-color: white;
+        height: 100%;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+      }
+    }
 }
 .run-a-node{
   .col-card-wrapper{
@@ -209,6 +223,12 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+
+.in-the-press{
+  img{
+    height: 40px;
+  }
+}
 
 
 // *************************** overrides ***************************

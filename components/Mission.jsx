@@ -3,7 +3,7 @@ import Button from "../components/utils/Button";
 
 function Mission() {
   return (
-    <div className="bg-dark py-5 text-white">
+    <div className="mission bg-dark pt-5 text-white">
       <Container>
         <Row className="py-5">
           <Col md={6} className="mb-4">
@@ -39,7 +39,7 @@ function Mission() {
         </Row>
       </Container>
 
-      <section className="bg-primary px-2 py-5">
+      <section className="bg-primary-grad px-2 py-5">
         <Container>
           <Row className="my-4">
             <Col md={6}>
@@ -81,9 +81,61 @@ function Mission() {
 
       <section className="founded-by">
         <Container className="px-2 px-md-5">
-          <h2 className="display-3 fw-bold text-center">
+          <h2 className="display-3 fw-bold text-center" data-aos="fade-up">
             Founded by some of the blockchain industry’s foremost builders
           </h2>
+        </Container>
+      </section>
+
+      <section className="bg-white text-black">
+        <Container>
+          <Row className="founder-cards">
+            <Col className="mb-4" md={4}>
+              <div className="col-card">
+                <h4 className="mb-0">Robert Habermeier</h4>
+                <p>Founder</p>
+                <p>
+                  Robert Habermeier is a Thiel Fellow and co-founder of
+                  Polkadot. He has a research and development background in
+                  blockchains, distributed systems, and cryptography. A longtime
+                  member of the Rust community, he has focused on leveraging the
+                  language’s features to build highly parallel and performant
+                  solutions.
+                </p>
+              </div>
+            </Col>
+            <Col className="mb-4" md={4}>
+              <div className="col-card">
+                <h4 className="mb-0">Dr. Gavin Wood</h4>
+                <p>Founder</p>
+                <p>
+                  Gavin began originating blockchain technology as co-founder
+                  and CTO of Ethereum. He invented fundamental components of the
+                  blockchain industry, including Solidity, Proof-of-Authority
+                  consensus, and Whisper. At Parity, Gavin currently leads
+                  innovation on Substrate and Polkadot. He coined the term Web
+                  3.0 in 2014 and serves as President of Web3 Foundation.
+                </p>
+              </div>
+            </Col>
+            <Col className="mb-4" md={4}>
+              <div className="col-card">
+                <h4 className="mb-0">Peter Czaban</h4>
+                <p>Founder</p>
+                <p>
+                  Peter is the Technology Director of the Web3 Foundation, where
+                  he works on supporting the development of the next generation
+                  of distributed technologies. He obtained his Masters of
+                  Engineering degree at the University of Oxford, reading
+                  Engineering Science where he focused on Bayesian Machine
+                  Learning. He has worked across defense, finance and data
+                  analytics industries, working on mesh networks, distributed
+                  knowledge bases, quantitative pricing models, machine learning
+                  and business development.
+                </p>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </section>
     </div>
