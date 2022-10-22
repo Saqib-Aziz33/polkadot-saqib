@@ -32,7 +32,7 @@ function Layout({ children }) {
       </Head>
       <TopScrollBar />
       <Header />
-      <main>{children}</main>
+      <main id="main">{children}</main>
       <Footer />
     </>
   );

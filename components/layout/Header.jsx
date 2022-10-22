@@ -1,4 +1,5 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaBars, FaGithub, FaDiscord, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
@@ -13,10 +14,28 @@ const navLinks = [
 ];
 
 function Header() {
+  const [showLang, setShowLang] = useState(false);
+  useEffect(() => {
+    document.getElementById("main").addEventListener("click", () => {
+      setShowLang(false);
+    });
+  }, []);
   return (
     <header className="header">
       <Container className="top opacity-50 pt-3 justify-content-between align-items-center d-none d-sm-flex">
-        <p>EN</p>
+        <div className="lang-selector">
+          <p className="mb-0" onClick={() => setShowLang(!showLang)}>
+            EN
+          </p>
+          {showLang && (
+            <div className="options">
+              <span>Urdu</span>
+              <span>Hindko</span>
+              <span>Pashto</span>
+              <span>Punjabi</span>
+            </div>
+          )}
+        </div>
         <div className="d-flex gap-4 align-items-center">
           <p>Lightpaper</p>
           <p>Whitepaper</p>

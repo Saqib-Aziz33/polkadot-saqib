@@ -39,7 +39,10 @@ export default function TechnologyPage({ techData }) {
               </Col>
               <Col md={8} className={`my-5 p-2 p-md-4`}>
                 <h2>{item.title}</h2>
-                <div dangerouslySetInnerHTML={item.text}></div>
+                <div
+                  style={{ textAlign: "justify" }}
+                  dangerouslySetInnerHTML={item.text}
+                ></div>
               </Col>
             </Row>
           ))}

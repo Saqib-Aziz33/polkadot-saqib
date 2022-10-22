@@ -92,6 +92,43 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+.header{
+  .lang-selector{
+    font-weight: 600;
+    position: relative;
+    z-index: 10;
+    .options{
+      position: absolute;
+      left: -10px;
+      width: 150px;
+      border-radius: 40px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 1.5rem;
+      animation: to-up 0.5s ease;
+      bottom: -12rem;
+      span {
+          margin: 0.5rem 0;
+          cursor: pointer;
+          display: block;
+          &:hover {
+            color: $clr-primary;
+          }
+        }
+    }
+  }
+  @keyframes to-up {
+    from{
+      opacity: 0;
+      bottom: -15rem;
+    }
+    to{
+      opacity: 1;
+      bottom: -12rem;
+    }
+  }
+}
 .hero{
   .scroll-animation{
     overflow: hidden;

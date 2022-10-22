@@ -11,7 +11,6 @@ export async function getStaticProps() {
 }
 
 export default function CommunityPage({ communityPageData }) {
-  console.log(communityPageData);
   return (
     <div className="community-page">
       <>
