@@ -223,11 +223,29 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+.contact-page{
+  
+    .col-card {
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-radius: 12px;
+      box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+}
+
 .blog-page{
   .pagination{
     --bs-pagination-color: #e6007aFF;
     --bs-pagination-active-bg: #e6007aFF;
     --bs-pagination-active-border-color: #e6007aFF;
+    --bs-pagination-focus-color: #e6007aFF;
+    --bs-pagination-hover-color: #e6007aFF;
+    --bs-pagination-focus-box-shadow: #e6007aFF;
   }
 }
 

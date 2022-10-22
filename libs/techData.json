@@ -1,0 +1,44 @@
+[
+  {
+    "title": "A better security model",
+    "text": {
+      "__html": "<p>In both Proof-of-Work and Proof-of-Stake systems, blockchains compete with each other over resources to secure their networks, and blockchains are easily attacked until they develop a significant community to support their network.</p><p>Polkadot takes a different approach by letting blockchains pool their security, which means that the blockchains' security is aggregated and applied to all.</p><p>By connecting to Polkadot, blockchain developers can secure their blockchain from day one.</p>"
+    },
+    "img": "/assets/td1.svg"
+  },
+  {
+    "title": "XCM: a secure cross-chain communication standard",
+    "text": {
+      "__html": "<p>For blockchains to work together and form the basis of Web3, they need a common language for communication. Polkadot sets the standard with XCM, a cross-consensus communication format and programming language that allows blockchains of different designs to securely exchange arbitrary data, code, and value. In this way, a new wave of rich cross-chain applications and services can be built that tap into the features and <a href='#'>benefits of different chains.</a></p>"
+    },
+    "img": "/assets/td2.svg"
+  },
+  {
+    "title": "A green, energy-efficient protocol",
+    "text": {
+      "__html": "<p>It’s hard to get behind blockchain as the next technological revolution when it wastes so much energy. Polkadot is designed to power the web’s next big wave of innovation, without the high energy consumption of conventional proof-of-work blockchains.</p><p>Polkadot’s Nominated Proof-of-stake (NPoS) model uses a small fraction of the energy consumed by conventional blockchains, and has the lowest carbon footprint among proof-of-stake protocols analyzed in recent research.</p>"
+    },
+    "img": "/assets/td3.svg"
+  },
+  {
+    "title": "A better security model",
+    "text": {
+      "__html": "<p>In both Proof-of-Work and Proof-of-Stake systems, blockchains compete with each other over resources to secure their networks, and blockchains are easily attacked until they develop a significant community to support their network.</p><p>Polkadot takes a different approach by letting blockchains pool their security, which means that the blockchains' security is aggregated and applied to all.</p><p>By connecting to Polkadot, blockchain developers can secure their blockchain from day one.</p>"
+    },
+    "img": "/assets/td1.svg"
+  },
+  {
+    "title": "XCM: a secure cross-chain communication standard",
+    "text": {
+      "__html": "<p>For blockchains to work together and form the basis of Web3, they need a common language for communication. Polkadot sets the standard with XCM, a cross-consensus communication format and programming language that allows blockchains of different designs to securely exchange arbitrary data, code, and value. In this way, a new wave of rich cross-chain applications and services can be built that tap into the features and <a href='#'>benefits of different chains.</a></p>"
+    },
+    "img": "/assets/td2.svg"
+  },
+  {
+    "title": "A green, energy-efficient protocol",
+    "text": {
+      "__html": "<p>It’s hard to get behind blockchain as the next technological revolution when it wastes so much energy. Polkadot is designed to power the web’s next big wave of innovation, without the high energy consumption of conventional proof-of-work blockchains.</p><p>Polkadot’s Nominated Proof-of-stake (NPoS) model uses a small fraction of the energy consumed by conventional blockchains, and has the lowest carbon footprint among proof-of-stake protocols analyzed in recent research.</p>"
+    },
+    "img": "/assets/td3.svg"
+  }
+]
