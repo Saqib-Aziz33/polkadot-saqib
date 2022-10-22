@@ -223,6 +223,14 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+.blog-page{
+  .pagination{
+    --bs-pagination-color: #e6007aFF;
+    --bs-pagination-active-bg: #e6007aFF;
+    --bs-pagination-active-border-color: #e6007aFF;
+  }
+}
+
 
 .in-the-press{
   img{

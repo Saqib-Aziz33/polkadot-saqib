@@ -5,7 +5,7 @@ import Button from "./utils/Button";
 function BecomeValidator() {
   return (
     <div className="my-5 py-5">
-      <Container>
+      <Container style={{ overflowX: "hidden" }}>
         <h2 className="display-4 fw-bold mb-5">Become a validator</h2>
         <Row>
           <Col md={6} className="mb-4">
