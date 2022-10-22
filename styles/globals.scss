@@ -68,15 +68,15 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     span{
       color: $clr-primary;
-      font-size: 2rem;
+      font-size: 2.5rem;
       position: absolute;
       right: 100%;
-      top: -30px;
+      top: -35px;
       opacity: 0;
     }
     &:hover{
       span{
-        animation: nav-link-ani 0.8s ease alternate;
+        animation: nav-link-ani 0.5s ease alternate;
       }
     }
   }
@@ -103,11 +103,15 @@ h1,h2,h3,h4,h5,h6{
       width: 100%;
       background-image: url('../media/xcm-animation-outer.svg');
       background-size: cover;
-      .inner{
-        height: 100%;
-        width: 100%;
-        background-image: url('../media/xcm-animation-inner.png');
-        background-size: cover;
+      .middle{
+        height: inherit;
+        width: inherit;
+        .inner {
+            height: inherit;
+            width: inherit;
+            background-image: url('../media/xcm-animation-inner.png');
+            background-size: cover;
+          }
       }
     }
   }

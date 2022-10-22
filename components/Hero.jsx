@@ -5,12 +5,18 @@ import Button from "./utils/Button";
 function Hero() {
   const outer = useRef(null);
   const inner = useRef(null);
+  const middle = useRef(null);
 
   useEffect(() => {
     function rotateImg() {
       if (window.scrollY < 1000) {
-        outer.current.style.rotate = `${window.scrollY / 5}deg`;
-        inner.current.style.rotate = `${window.scrollY / 10}deg`;
+        outer.current.style.rotate = `${Math.floor(
+          (window.scrollY % 180) / 10
+        )}deg`;
+        middle.current.style.rotate = `${Math.abs(
+          Math.floor(((window.scrollY % 180) - 180) / 10)
+        )}deg`;
+        inner.current.style.rotate = `-${Math.floor(window.scrollY / 5)}grad`;
       }
     }
     window.addEventListener("scroll", rotateImg);
@@ -41,7 +47,9 @@ function Hero() {
           <Col lg={6} className="mb-3">
             <div className="scroll-animation">
               <div ref={outer} className="outer">
-                <div ref={inner} className="inner"></div>
+                <div ref={middle} className="middle">
+                  <div ref={inner} className="inner"></div>
+                </div>
               </div>
             </div>
           </Col>
