@@ -192,6 +192,24 @@ h1,h2,h3,h4,h5,h6{
   background-size: cover;
   padding-top: 150px;padding-bottom: 150px;
 }
+.run-a-node{
+  .col-card-wrapper{
+    position: relative;
+    top: -100px;
+  }
+  .col-card{
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
+    &:hover{
+      transform: translateY(-10px);
+    }
+  }
+}
+
+
 
 // *************************** overrides ***************************
 .bg-primary{

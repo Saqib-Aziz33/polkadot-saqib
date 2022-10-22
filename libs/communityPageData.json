@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Twitter",
+    "text": "Follow @Polkadot",
+    "img": "/assets/logo-circle-twitter.svg"
+  },
+  {
+    "title": "Maling list",
+    "text": "Don't miss updates",
+    "img": "/assets/logo-circle-newsletter.svg"
+  },
+  {
+    "title": "Reddit",
+    "text": "Discuss Polkadot news",
+    "img": "/assets/logo-circle-reddit.svg"
+  },
+  {
+    "title": "Discord",
+    "text": "Discuss with community",
+    "img": "/assets/logo-circle-discord.svg"
+  },
+  {
+    "title": "Github",
+    "text": "Contribute to the codebase",
+    "img": "/assets/logo-circle-github.svg"
+  },
+  {
+    "title": "Element chat",
+    "text": "Get support",
+    "img": "/assets/logo-circle-element.svg"
+  },
+  {
+    "title": "Documentation",
+    "text": "Read and contribute to docs",
+    "img": "/assets/logo-circle-documentation.svg"
+  },
+  {
+    "title": "Youtube",
+    "text": "Watch conference videos",
+    "img": "/assets/logo-circle-youtube.svg"
+  }
+]
