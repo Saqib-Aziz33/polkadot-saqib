@@ -30,7 +30,7 @@ function Powering({ tokenInfo }) {
         <Button>Discover DOT</Button>
       </Container>
 
-      <section className="bg-primary px-2 py-5">
+      <section className="bg-primary-grad px-2 py-5">
         <Container>
           <Row className="my-4">
             <Col md={6}>

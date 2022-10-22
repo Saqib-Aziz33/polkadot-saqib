@@ -39,7 +39,7 @@ function TopScrollBar() {
           top: 0,
           left: 0,
           width: 0,
-          height: "5px",
+          height: "3px",
           backgroundColor: "#e6007aFF",
         }}
       />

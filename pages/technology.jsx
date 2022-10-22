@@ -8,7 +8,7 @@ export default function TechnologyPage() {
       <>
         <HeroBanner title="A scalable, interoperable & secure network protocol for the next web" />
         <AnyTypeData />
-        <div className="wrapper py-5 text-white bg-primary">
+        <div className="wrapper py-5 text-white bg-primary-grad">
           <BannerBox heading="Network Glossary">
             <p className="text-white">
               Polkadot unites a network of heterogeneous blockchains called
