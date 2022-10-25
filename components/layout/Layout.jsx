@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Message from "../utils/Message";
 import Head from "next/head";
 import TopScrollBar from "../utils/TopScrollBar";
 import Aos from "aos";
@@ -31,6 +32,7 @@ function Layout({ children }) {
         />
       </Head>
       <TopScrollBar />
+      <Message />
       <Header />
       <main id="main">{children}</main>
       <Footer />

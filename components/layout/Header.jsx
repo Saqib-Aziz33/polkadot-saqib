@@ -24,7 +24,11 @@ function Header() {
     <header className="header">
       <Container className="top opacity-50 pt-3 justify-content-between align-items-center d-none d-sm-flex">
         <div className="lang-selector">
-          <p className="mb-0" onClick={() => setShowLang(!showLang)}>
+          <p
+            className="mb-0"
+            style={{ cursor: "pointer" }}
+            onClick={() => setShowLang(!showLang)}
+          >
             EN
           </p>
           {showLang && (
